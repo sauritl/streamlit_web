@@ -11,7 +11,7 @@ st.write(df)
 
 
 st.title("Connect to Google Sheets")
-gsheet_url = "https://docs.google.com/spreadsheets/d/1y1saTpjqKoFVuNtJYqvrsz-wYnV8P0knjpKv4ZGaIpM/edit?usp=sharing"
+gsheet_url = st.secrets["public_gsheets_url"]
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)
