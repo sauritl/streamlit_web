@@ -1,6 +1,5 @@
-streamlit==0.68.1
-gsheets==0.6
-spotipy==2.19.0
-numpy==1.18.1
-pandas==0.25.3
-gsheetsdb==0.1.13.1
+streamlit
+spotipy
+numpy
+pandas
+gsheetsdb
