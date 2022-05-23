@@ -19,7 +19,7 @@ st.write(df_gsheet)
 
 
 st.title("Select the user")
-gsheet_url_spotify = "https://docs.google.com/spreadsheets/d/1HgnR9sCktveRSOHqLEm3UdCxSyf5iu5NE72XVZMq2AE/edit?usp=sharing"
+gsheet_url_spotify = st.secrets["public_gsheets_url"]
 conn = connect()
 rows = conn.execute(f'SELECT user FROM "{gsheet_url}"')
 spotify_users = pd.DataFrame(rows)
