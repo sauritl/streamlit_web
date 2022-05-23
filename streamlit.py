@@ -18,9 +18,8 @@ df_gsheet = pd.DataFrame(rows)
 st.write(df_gsheet)
 
 
-st.title("Select the user")
-gsheet_url_spotify = st.secrets["public_gsheets_url"]
-conn = connect()
-rows = conn.execute(f'SELECT user FROM "{gsheet_url}"')
-spotify_users = pd.DataFrame(rows)
-st.write(df_gsheet)
+t_array = df_gsheet['user'].to_numpy()
+
+st.title("Ver el select")
+
+user = st.multiselect("Seleccione Usuario", t_array)
