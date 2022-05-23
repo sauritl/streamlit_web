@@ -16,3 +16,11 @@ conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)
 st.write(df_gsheet)
+
+
+st.title("Select the user")
+gsheet_url_spotify = "https://docs.google.com/spreadsheets/d/1HgnR9sCktveRSOHqLEm3UdCxSyf5iu5NE72XVZMq2AE/edit?usp=sharing"
+conn = connect()
+rows = conn.execute(f'SELECT user FROM "{gsheet_url}"')
+spotify_users = pd.DataFrame(rows)
+st.write(df_gsheet)
