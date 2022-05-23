@@ -15,7 +15,7 @@ df_gsheet = pd.DataFrame(rows)
 st.write(df_gsheet)
 
 
-t_array = df_gsheet['user'].to_numpy()
+t_array = df_gsheet['Nombre_Completo'].to_numpy()
 
 st.title("Ver el select")
 
