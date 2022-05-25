@@ -22,9 +22,9 @@ st.title("Ver el select")
 user = st.multiselect("Seleccione Usuario", t_array)
 
 st.title("Data Exploration")
-st.selectbox("Choose a variable for the x-axis", t_array)
 
-select = selectbox("Choose a variable for the x-axis", t_array)
+
+select = st.selectbox("Choose a variable for the x-axis", t_array)
 
 st.write(select)
 
