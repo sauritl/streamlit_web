@@ -3,8 +3,7 @@ import pandas as pd
 from gsheetsdb import connect
 import functions
 
-st.title("Data Frame")
-st.write(get_df(df_gsheet))
+
 
 
 
@@ -16,6 +15,10 @@ conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)
 st.write(df_gsheet)
+
+
+st.title("Data Frame")
+st.write(get_df(df_gsheet))
 
 
 t_array = df_gsheet['Nombre_Completo'].to_numpy()
