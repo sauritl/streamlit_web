@@ -28,3 +28,12 @@ st.title("Data Exploration")
 select = st.selectbox("Choose a variable for the x-axis", t_array)
 
 st.write(select)
+
+
+st.title("Connect to users")
+spotify_csv = st.secrets["spotify_csv"]
+conn = connect()
+rows = conn.execute(f'SELECT * FROM "{spotify_csv}"')
+spotify_csv = pd.DataFrame(rows)
+st.write(spotify_csv)
+
