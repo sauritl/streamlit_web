@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 from gsheetsdb import connect
+import functions
 
+st.title("Data Frame")
+st.write(get_df(df_gsheet))
 
 
 
