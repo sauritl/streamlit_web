@@ -35,6 +35,6 @@ spotify_csv = st.secrets["spotify_csv"]
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{spotify_csv}"')
 spotify_csv = pd.DataFrame(rows)
-to_show = spotify_csv['user_name']== str(select)
+to_show = spotify_csv['user_name'] equal str(select)
 st.write(to_show)
 
