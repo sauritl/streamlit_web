@@ -3,3 +3,4 @@ spotipy
 numpy
 pandas
 gsheetsdb
+protobuf~=3.19.0
