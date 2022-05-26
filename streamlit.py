@@ -27,7 +27,7 @@ st.title("Data Exploration")
 
 select = st.selectbox("Choose a variable for the x-axis", t_array)
 
-st.write(select)
+st.write(select + "select")
 
 
 st.title("Connect to users")
