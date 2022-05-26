@@ -10,7 +10,8 @@ from gsheetsdb import connect
 
 
 st.title("Connect to Google Sheets")
-gsheet_url = st.secrets["public_gsheets_url"]
+#gsheet_url = st.secrets["public_gsheets_url"]
+gsheet_url = "https://docs.google.com/spreadsheets/d/1HgnR9sCktveRSOHqLEm3UdCxSyf5iu5NE72XVZMq2AE/edit?usp=sharing"
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)
