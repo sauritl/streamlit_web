@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from gsheetsdb import connect
-#import functions
+
 
 
 
@@ -10,8 +10,7 @@ from gsheetsdb import connect
 
 
 st.title("Connect to Google Sheets")
-#gsheet_url = st.secrets["public_gsheets_url"]
-gsheet_url = "https://docs.google.com/spreadsheets/d/1HgnR9sCktveRSOHqLEm3UdCxSyf5iu5NE72XVZMq2AE/edit?usp=sharing"
+gsheet_url = st.secrets["public_gsheets_url"]
 conn = connect()
 rows = conn.execute(f'SELECT * FROM "{gsheet_url}"')
 df_gsheet = pd.DataFrame(rows)
