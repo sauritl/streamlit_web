@@ -1,16 +1,15 @@
 import pandas as pd
 from gsheetsdb import connect
-import configparser
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from datetime import datetime, timedelta
 import pandas as pd
-import json
-import requests
-from sklearn import preprocessing
+#import json
+#import requests
+#from sklearn import preprocessing
 import plotly.graph_objects as go
 import plotly.offline as pyo
-from urllib.error import HTTPError
+#from urllib.error import HTTPError
 from spotipy import SpotifyException
 
 date = datetime.today() - timedelta(days=30)
