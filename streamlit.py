@@ -20,3 +20,11 @@ t_array = df_gsheet['Nombre_Completo'].to_numpy()
 st.title("Ver el select")
 
 user = st.multiselect("Seleccione Usuario", t_array)
+
+
+st.title("Data Exploration")
+
+
+select = st.selectbox("Choose a variable for the x-axis", t_array)
+
+st.write(select)
