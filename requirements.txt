@@ -3,3 +3,4 @@ spotipy
 numpy
 pandas
 gsheetsdb
+plotly
