@@ -1,4 +1,5 @@
 import streamlit as st
+import seaborn as sns
 import pandas as pd
 from gsheetsdb import connect
 
@@ -37,4 +38,8 @@ rows = conn.execute(f'SELECT * FROM "{spotify_csv}"')
 spotify_csv = pd.DataFrame(rows)
 to_show = spotify_csv[spotify_csv['user'] == select] 
 st.write(to_show)
+
+sns.set_theme(style="darkgrid")
+ax = sns.countplot(x="artist_name", data=to_show)
+ax.set(xlabel= 'Artista', ylabel='Veces escuchadas')
 
