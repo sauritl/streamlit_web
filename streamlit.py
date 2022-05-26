@@ -18,7 +18,8 @@ st.write(df_gsheet)
 
 
 st.title("Data Frame")
-st.write(get_df(df_gsheet))
+df_new = get_df(df_gsheet))
+st.write(df_new)
 
 
 t_array = df_gsheet['Nombre_Completo'].to_numpy()
