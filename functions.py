@@ -7,8 +7,8 @@ import pandas as pd
 #import json
 #import requests
 #from sklearn import preprocessing
-import plotly.graph_objects as go
-import plotly.offline as pyo
+#import plotly.graph_objects as go
+#import plotly.offline as pyo
 #from urllib.error import HTTPError
 from spotipy import SpotifyException
 
