@@ -17,7 +17,7 @@ df_gsheet = pd.DataFrame(rows)
 st.write(df_gsheet)
 
 
-st.title("Data Frame")
+#st.title("Data Frame")
 #df_new = get_df(df_gsheet))
 #st.write(df_new)
 
