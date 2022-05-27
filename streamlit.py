@@ -39,10 +39,5 @@ spotify_csv = pd.DataFrame(rows)
 to_show = spotify_csv[spotify_csv['user'] == select] 
 st.write(to_show)
 
-st.write(
-sns.set_theme(style="darkgrid")
-ax = sns.countplot(y="artist_genres", data=df)
-ax.set(xlabel= 'Veces escuchadas', ylabel='Genero')
 
-)
 
