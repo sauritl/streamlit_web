@@ -42,11 +42,5 @@ st.write(to_show)
 
 
 
-plost.bar_chart(
-    data =to_show,
-    bar='artist_genres')
-
-st.write(plost.bar_chart)
-
 
 
